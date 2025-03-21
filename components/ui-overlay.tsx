@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
-import { MagicWand, Wind, Leaf, Droplets, Scale, Sparkles } from "lucide-react"
+import { Wand, Wind, Leaf, Droplets, Scale, Sparkles } from "lucide-react"
 
 export default function UIOverlay({ level, onApplyForce, onAdjustParameters }) {
   const [forceX, setForceX] = useState(0)
@@ -169,7 +169,7 @@ export default function UIOverlay({ level, onApplyForce, onAdjustParameters }) {
           <Tabs value={activeTab} onValueChange={setActiveTab}>
             <TabsList className="grid grid-cols-3 mb-4">
               <TabsTrigger value="forces" className="flex items-center space-x-1">
-                <MagicWand className="h-4 w-4" />
+                <Wand className="h-4 w-4" />
                 <span>Forces</span>
               </TabsTrigger>
               <TabsTrigger value="parameters" className="flex items-center space-x-1">
